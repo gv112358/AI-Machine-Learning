@@ -1,0 +1,12 @@
+import csv
+
+with open('./iris.csv', 'r') as file:
+    reader = csv.reader(file)
+    
+    #righe = sum(1 for riga in reader)
+    prima_riga = next(reader)
+
+
+
+#print(f"Il file CSV contiene {righe} righe.")
+print(f"gli attributi sono: {prima_riga}")

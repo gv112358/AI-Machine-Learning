@@ -1,0 +1,28 @@
+open_file = open("iris.csv","r") 
+count = 0 
+text = open_file.read() 
+list = text.split("\n") 
+for x in list: 
+    if x: 
+        count += 1 
+
+print(" Il numero totale di righe nel file di testo è:", count )
+
+import csv
+
+with open('/home/studente17/Scaricati/iris.csv', 'r') as file:
+    reader = csv.reader(file)
+    righe = sum(1 for righa in reader)
+
+print(f"Il file CSV contiene {righe} righe.")
+
+sPath = "/home/studente33/AIPython/"
+file = open(sPath + "iris.csv","r")
+count = 0
+text = file.read()
+list = text.split("\n")
+file.close()
+for x in list:
+    if x:
+        count += 1
+print(" Il numero totale di righe nel file di testo è:", count ) 
